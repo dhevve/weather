@@ -1,0 +1,215 @@
+.app {
+  display: inline-flex;
+}
+
+body {
+  background-color: #e2e2e2;
+}
+
+@media screen and (max-width: 1600px) {
+  .card {
+    width: 150px;
+    height: 180px;
+    margin-left: 50px;
+  }
+  .week-box {
+    margin: 40px 0 0 150px;
+  }
+  .today-card {
+    width: 280px;
+    height: 280px;
+    padding: 10px 0 10px 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main {
+    height: 630px;
+  }
+  .card {
+    width: 150px;
+    height: 180px;
+    margin-left: 10px;
+  }
+  .week-box {
+    margin: 40px 0 0 40px;
+  }
+  .today-card {
+    width: 280px;
+    height: 280px;
+    padding: 10px 0 10px 10px;
+    margin-right: 40px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+  }
+  .main {
+    width: 100%;
+    justify-content: center;
+  }
+  .card {
+    width: 150px;
+    height: 180px;
+    margin-left: 50px;
+  }
+  .today-card {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .week-box {
+    margin: 40px 0 0 20px;
+  }
+  .card {
+    width: 120px;
+    height: 180px;
+    margin-left: 40px;
+  }
+  .today-card {
+    width: 250px;
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    width: 100%;
+    justify-content: center;
+  }
+  .week-box {
+    margin: 40px 0 0 20px;
+  }
+  .card {
+    width: 120px;
+    height: 180px;
+    margin-left: 15px;
+  }
+  .today-card {
+    width: 250px;
+    height: 280px;
+    padding: 10px 0 10px 10px;
+    margin-left: 10px;
+  }
+}
+
+/* боковая панель */
+.main {
+  background-color: #fff;
+  display: flex;
+
+  box-shadow: 3px 0px 31px 8px rgba(34, 60, 80, 0.2);
+}
+
+.main-container {
+  margin: 40px 20px;
+}
+
+.main-input {
+  background: url("../assets/search.png") no-repeat 4px 3px;
+  background-color: #e2e2e2;
+  width: 100%;
+  padding: 0 30px;
+  height: 23px;
+  border-radius: 10px;
+  border: none;
+}
+
+.ex-img {
+  text-align: center;
+  align-self: center;
+  margin-top: 80px;
+}
+
+.ex-img img {
+  height: 170px;
+  width: 200px;
+}
+
+/* Температурка */
+.weather-box {
+  margin-top: 70px;
+  font-size: 80px;
+}
+
+.date {
+  margin-top: 30px;
+
+  font-weight: 500;
+  font-size: 22px;
+}
+
+/* Название города  */
+.location-text {
+  font-size: 40px;
+}
+
+/* прогноз на неделю */
+
+.week-box {
+  /* margin: 40px 0 0 60px; */
+}
+
+.week-card {
+  display: inline-flex;
+  margin-top: 20px;
+}
+
+.card {
+  /* width: 150px; */
+  text-align: center;
+  padding: 10px 0;
+  /* margin-right: 70px; */
+  box-shadow: 8px 0px 19px 3px rgba(34, 60, 80, 0.2);
+
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.today-stat {
+  margin-top: 20px;
+}
+
+.today-cards {
+  display: inline-flex;
+}
+
+.today-card {
+  padding: 10px 0 10px 10px;
+  margin-top: 10px;
+  /* margin-right: 10px; */
+  box-shadow: 8px 0px 19px 3px rgba(34, 60, 80, 0.2);
+
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.today-card p {
+  color: gray;
+}
+
+.wind-status {
+  margin-top: 100px;
+  font-size: 40px;
+}
+
+.min {
+  margin-top: 10px;
+  font-size: 70px;
+}
+
+.max {
+  margin-top: 10px;
+  font-size: 70px;
+}
+
+.card-temp a {
+  color: gray;
+}
