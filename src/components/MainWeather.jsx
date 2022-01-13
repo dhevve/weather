@@ -36,7 +36,14 @@ const MainWeather = () => {
                       <>
                           <LeftBar />
                       </> 
-                      : <></> }
+                      : <>
+                          <div className="weather-box">
+                              <div className="temp">1°c</div>
+                          </div>
+                          <div className="location-text">
+                          Kyiv, UA
+                      </div> 
+                      </> }yh
                           <Date />
                       </div>
                 </div>

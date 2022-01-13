@@ -8,8 +8,6 @@ body {
 
 @media screen and (max-width: 1600px) {
   .card {
-    width: 150px;
-    height: 180px;
     margin-left: 50px;
   }
   .week-box {
@@ -29,8 +27,6 @@ body {
     height: 630px;
   }
   .card {
-    width: 150px;
-    height: 180px;
     margin-left: 10px;
   }
   .week-box {
@@ -54,9 +50,7 @@ body {
     justify-content: center;
   }
   .card {
-    width: 150px;
-    height: 180px;
-    margin-left: 50px;
+    margin-left: 30px;
   }
   .today-card {
     width: 280px;
@@ -69,9 +63,7 @@ body {
     margin: 40px 0 0 20px;
   }
   .card {
-    width: 120px;
-    height: 180px;
-    margin-left: 40px;
+    margin-left: 5px;
   }
   .today-card {
     width: 250px;
@@ -79,7 +71,7 @@ body {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
   .main {
     width: 100%;
     justify-content: center;
@@ -88,15 +80,19 @@ body {
     margin: 40px 0 0 20px;
   }
   .card {
-    width: 120px;
-    height: 180px;
-    margin-left: 15px;
+    margin-left: 5px;
   }
   .today-card {
     width: 250px;
     height: 280px;
     padding: 10px 0 10px 10px;
     margin-left: 10px;
+  }
+  .week-card {
+    flex-direction: column;
+  }
+  .today-cards {
+    flex-direction: column;
   }
 }
 
@@ -153,17 +149,14 @@ body {
 
 /* прогноз на неделю */
 
-.week-box {
-  /* margin: 40px 0 0 60px; */
-}
-
 .week-card {
   display: inline-flex;
   margin-top: 20px;
 }
 
 .card {
-  /* width: 150px; */
+  width: 150px;
+  height: 180px;
   text-align: center;
   padding: 10px 0;
   /* margin-right: 70px; */
@@ -182,9 +175,8 @@ body {
 }
 
 .today-card {
-  padding: 10px 0 10px 10px;
   margin-top: 10px;
-  /* margin-right: 10px; */
+  margin-right: 10px;
   box-shadow: 8px 0px 19px 3px rgba(34, 60, 80, 0.2);
 
   background-color: #fff;
