@@ -9,53 +9,54 @@ import Date from "./Date";
 import LeftBar from "./LeftBar";
 
 const MainWeather = () => {
+
   const weather = useSelector(({ weather }) => weather);
   const dispatch = useDispatch();
-  const [query, setQuery] = useState(""); //input
+  const [query, setQuery] = useState("");
 
   const fetchweather = () => {
     dispatch(fetchWeather(query));
   }
+
     return (
           <>
             <div className="app">               
-                 
- 
                 <div className="main">
+
                     <div className="main-container">
-                        <input 
-                            type="text" 
-                            className="main-input" 
-                            placeholder="Search..." 
-                            value={query}
-                            onChange={(e) => setQuery(e.target.value)}
-                        /> 
-                        <button onClick={fetchweather}>Search</button>
+                        <div className="input-button ">
+                          <input 
+                              type="text" 
+                              className="main-input" 
+                              placeholder="Search..." 
+                              value={query}
+                              onChange={(e) => setQuery(e.target.value)}
+                          /> 
+                          <button onClick={fetchweather}>Search</button>
+                        </div>
                       
-                    {typeof weather.list != "undefined" ?
-                      <>
-                          <LeftBar />
-                      </> 
-                      : <>
-                          <div className="weather-box">
-                              <div className="temp">1°c</div>
-                          </div>
-                          <div className="location-text">
-                          Kyiv, UA
-                      </div> 
-                      </> }yh
+                        {weather.list !== undefined ?
+                              <LeftBar />
+                          : <h1 style={{marginTop: "30px"}}>Enter the weather</h1> 
+                        }
+
                           <Date />
+
                       </div>
+                
                 </div>
 
                 <div className="week-box">
-                  <h1>Week</h1>
 
-                {typeof weather.list != "undefined" ?
-                <>
-                  <Week />
-                  <TodayCard />
-                </> : <></>}
+                    {weather.list !== undefined ?
+                      <>
+                        <h1>Week</h1>
+                        <Week />
+                        <TodayCard />
+                      </>  
+                      : 
+                      <></>
+                    }
 
                 </div>
 

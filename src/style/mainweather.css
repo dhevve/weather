@@ -6,7 +6,9 @@ body {
   background-color: #e2e2e2;
 }
 
-@media screen and (max-width: 1600px) {
+/* Responsive */
+
+@media screen and (max-width: 2560px) {
   .card {
     margin-left: 50px;
   }
@@ -19,6 +21,9 @@ body {
     padding: 10px 0 10px 10px;
     margin-right: 50px;
     margin-left: 50px;
+  }
+  .main {
+    height: 100vh;
   }
 }
 
@@ -40,7 +45,10 @@ body {
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1199px) {
+}
+
+@media screen and (max-width: 991px) {
   .app {
     display: flex;
     flex-direction: column;
@@ -60,7 +68,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .week-box {
-    margin: 40px 0 0 20px;
+    margin: 40px 0 0 50px;
   }
   .card {
     margin-left: 5px;
@@ -71,7 +79,7 @@ body {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 575px) {
   .main {
     width: 100%;
     justify-content: center;
@@ -97,6 +105,7 @@ body {
 }
 
 /* боковая панель */
+
 .main {
   background-color: #fff;
   display: flex;
@@ -129,7 +138,27 @@ body {
   width: 200px;
 }
 
-/* Температурка */
+button {
+  border-radius: 10px;
+  border: 1px solid #000;
+
+  background-color: #fff;
+
+  transition: 0.2s linear;
+
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(185, 185, 185);
+  color: #fff;
+}
+
+.input-button {
+  display: inline-flex;
+}
+
+/* Temp */
 .weather-box {
   margin-top: 70px;
   font-size: 80px;
@@ -142,12 +171,12 @@ body {
   font-size: 22px;
 }
 
-/* Название города  */
+/* City name  */
 .location-text {
   font-size: 40px;
 }
 
-/* прогноз на неделю */
+/* Week */
 
 .week-card {
   display: inline-flex;
@@ -159,12 +188,24 @@ body {
   height: 180px;
   text-align: center;
   padding: 10px 0;
-  /* margin-right: 70px; */
+  margin: 0 0 0 10px;
   box-shadow: 8px 0px 19px 3px rgba(34, 60, 80, 0.2);
 
   background-color: #fff;
   border-radius: 15px;
+
+  transition: 0.2s linear;
 }
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.week-box {
+  margin: 20px 0 0 15px;
+}
+
+/* Today */
 
 .today-stat {
   margin-top: 20px;
@@ -175,30 +216,38 @@ body {
 }
 
 .today-card {
-  margin-top: 10px;
-  margin-right: 10px;
+  width: 280px;
+  height: 280px;
+  padding: 10px 0 10px 10px;
+  margin: 10px 20px;
   box-shadow: 8px 0px 19px 3px rgba(34, 60, 80, 0.2);
 
   background-color: #fff;
   border-radius: 15px;
+
+  transition: 0.2s linear;
 }
 
 .today-card p {
   color: gray;
 }
 
+.today-card:hover {
+  transform: scale(1.1);
+}
+
 .wind-status {
-  margin-top: 100px;
-  font-size: 40px;
+  margin-top: 80px;
+  font-size: 60px;
 }
 
 .min {
-  margin-top: 10px;
+  margin-top: 30px;
   font-size: 70px;
 }
 
 .max {
-  margin-top: 10px;
+  margin-top: 20px;
   font-size: 70px;
 }
 
