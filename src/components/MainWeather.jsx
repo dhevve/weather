@@ -37,7 +37,7 @@ const MainWeather = () => {
                       
                         {weather.list !== undefined ?
                               <LeftBar />
-                          : <h1 style={{marginTop: "30px"}}>Enter the weather</h1> 
+                          : <h1 style={{marginTop: "30px"}}>Enter the city</h1> 
                         }
 
                           <Date />
